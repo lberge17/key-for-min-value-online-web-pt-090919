@@ -4,8 +4,8 @@
 def key_for_min_value(name_hash)
   i = "none"
   name_hash.each do |name, num|
-    if num < i || i == "none"
-      num = i
+    if num.to_i < i || i == "none"
+      num.to_i = i
       name
     end
   end
